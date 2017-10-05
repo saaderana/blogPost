@@ -30,6 +30,8 @@ const BlogPosts = {
   get: function(id=null) {
     // if id passed in, retrieve single post,
     // otherwise send all posts.
+
+
     if (id !== null) {
       return this.posts.find(post => post.id === id);
     }
